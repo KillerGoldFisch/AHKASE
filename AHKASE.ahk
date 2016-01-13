@@ -4,6 +4,7 @@ By BitJunky 1/1/2016
 Install https://autohotkey.com/ and run this script to use and hit F10 in Ark, F11 to run Example Macro to load Items
 See end of script to customize hotkeys.
 Some nice Maps to SetPlayerPos  http://xose.net/arkmap/ http://jdimensional.com/ark-map/
+
 */
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
