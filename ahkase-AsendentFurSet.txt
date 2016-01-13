@@ -1,0 +1,9 @@
+{Tab}{Tab}
+Cheat GiveItemNum 432 1 100 0 - Fur Boots Fur Boots{enter}
+Cheat GiveItemNum 431 1 100 0 - Fur Cap Fur Cap{enter}
+Cheat GiveItemNum 430 1 100 0 - Fur Chestpiece Fur Chestpiece{enter}
+Cheat GiveItemNum 429 1 100 0 - Fur Leggings Fur Leggings{enter}
+Cheat GiveItemNum 429 1 100 0 - Fur Leggings Fur Leggings{enter}
+Cheat GiveItemNum 430 1 100 0 - Fur Chestpiece Fur Chestpiece{enter}
+Cheat GiveItemNum 433 1 100 0 - Fur Gauntlets Fur Gauntlets{enter}
+{enter}

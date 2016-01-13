@@ -1,0 +1,8 @@
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalFloor.PrimalItemStructure_MetalFloor'" 4 0 0 - Metal Foundation Metal Foundation{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalWall.PrimalItemStructure_MetalWall'" 3 0 0 - Metal Wall Metal Wall{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalCeiling.PrimalItemStructure_MetalCeiling'" 1 0 0 - Metal Ceiling Metal Ceiling{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalDoor.PrimalItemStructure_MetalDoor'" 1 0 0 - Metal Door Metal Door{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalWallWithDoor.PrimalItemStructure_MetalWallWithDoor'" 1 0 0 - Metal Doorframe Metal Doorframe{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalFloor.PrimalItemStructure_MetalFloor'" 1 0 0 - Metal Foundation Metal Foundation{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_StorageBox_Huge.PrimalItemStructure_StorageBox_Huge'" 1 100 0 - Vault Vault{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_Bed_Modern.PrimalItemStructure_Bed_Modern'" 1 100 0 - Bunk Bed Bunk Bed{enter}.

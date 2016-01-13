@@ -1,0 +1,25 @@
+{tab}{tab}
+Cheat GiveItemNum 35 1 120 0 ; Metal Pick{enter}
+Cheat GiveItemNum 36 1 120 0 ; Metal Hatchet{enter}
+
+Cheat GiveItemNum 72 1 120 0 ; GPS{enter}
+
+Cheat GiveItemNum 140 1 120 0 ; Pike{enter}
+
+Cheat GiveItemNum 362 1 120 0 ; Crossbow{enter}
+Cheat GiveItemNum 32 50 120 0 ; Stone Arrow{enter}
+
+Cheat GiveItemNum 123 50 120 0 ; Narcotic{enter}
+Cheat GiveItemNum 132 1 120 0 ; Longneck Rifle{enter}
+
+Cheat GiveItemNum 222 1 120 0 ; Flak Leggings{enter}
+Cheat GiveItemNum 223 1 120 0 ; Chestpiece{enter}
+Cheat GiveItemNum 224 1 120 0 ; Helmet{enter}
+Cheat GiveItemNum 225 1 120 0 ; Boots{enter}
+Cheat GiveItemNum 226 1 120 0 ; Gauntlets{enter}
+Cheat GiveItemNum 283 1 120 0 ; SpyGlass{enter}
+Cheat GiveItemNum 379 1   0 0 ; Canteen (Full){enter}
+
+Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItemAmmo_TranqDart.PrimalItemAmmo_TranqDart'" 50 120 0 ; Tranquilizer Dart{enter}
+{enter}
+

@@ -1,0 +1,11 @@
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ApexDrop_Megalodon.PrimalItemResource_ApexDrop_Megalodon'" 8 0 0 - Megalodon Tooth Megalodon Tooth{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ApexDrop_Rex.PrimalItemResource_ApexDrop_Rex'" 4 0 0 - Tyrannosaurus Arm Tyrannosaurus Arm{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ApexDrop_Argentavis.PrimalItemResource_ApexDrop_Argentavis'" 4 0 0 - Argentavis Talon Argentavis Talon{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ApexDrop_Argentavis.PrimalItemResource_ApexDrop_Argentavis'" 4 0 0 - Argentavis Talon Argentavis Talon{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_ApexDrop_Sauro.PrimalItemResource_ApexDrop_Sauro'" 2 0 0 - Sauropod Vertebra Sauropod Vertebra{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Artifacts/PrimalItemArtifact_01.PrimalItemArtifact_01'" 1 0 0 - Artifact Of The Hunter Artifact Of The Hunter{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Artifacts/PrimalItemArtifact_03.PrimalItemArtifact_03'" 1 0 0 - Artifact Of The Massive Artifact Of The Massive{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Artifacts/PrimalItemArtifact_02.PrimalItemArtifact_02'" 1 0 0 - Artifact Of The Pack Artifact Of The Pack{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Artifacts/PrimalItemArtifact_07.PrimalItemArtifact_07'" 1 0 0 - Artifact Of The Devourer Artifact Of The Devourer{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Artifacts/PrimalItemArtifact_05.PrimalItemArtifact_05'" 1 0 0 - Artifact Of The Clever Artifact Of The Clever{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Artifacts/PrimalItemArtifact_06.PrimalItemArtifact_06'" 1 0 0 - Artifact Of The Skylord Artifact Of The Skylord{enter}.
