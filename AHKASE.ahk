@@ -1,10 +1,10 @@
 ﻿/*
-Ark Survival Evolved - Auto Hot Key Script 1.0
+Ark Survival Evolved - Auto Hot Key Script 1.01
 By BitJunky 1/1/2016
 Install https://autohotkey.com/ and run this script to use and hit F10 in Ark, F11 to run Example Macro to load Items
 See end of script to customize hotkeys.
 Some nice Maps to SetPlayerPos  http://xose.net/arkmap/ http://jdimensional.com/ark-map/
-
+1/24/16 - Added CrossHair
 */
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
@@ -12,9 +12,10 @@ Some nice Maps to SetPlayerPos  http://xose.net/arkmap/ http://jdimensional.com/
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+bCrossHair = 0
 SplashImage, ahkase.jpg, b fs18, Auto Hot Key Script `n for Ark Survival Evolved v1.0 `n by BitJunky 2016
-Sleep, 3000
-SplashImage, Off
+SetTimer, SplashOff, 3000
+
 
 ; *** Global Variables ***
 
@@ -101,6 +102,16 @@ Loop, read, ArkPOIs.csv
 Sort ArkPOIs, UD| ; sort created index
 StringReplace, ArkPOIs, ArkPOIs, |, || ; set first entry as preselected
 
+ScrW := (A_ScreenWidth // 2)  -55
+ScrH := (A_ScreenHeight // 2) -50
+
+Gui, GuiCrossHair:Default
+Gui +LastFound +AlwaysOnTop -Caption +ToolWindow  ; +ToolWindow avoids a taskbar button and an alt-tab menu item.
+Gui, Color, cWhite
+Gui, Font, s32
+Gui, Add, Text, vCrossHairText cRed altsubmit gToggleCrossHair, X 
+WinSet, TransColor, cWhite 150 ; Make all pixels of this color transparent and make the text itself translucent (150):
+;Gui, Show, x%ScrW% y%ScrH% NoActivate  ; NoActivate avoids deactivating the currently active window.
 
 ; *** GuiSummon ***
 Gui, GuiSummon:Default
@@ -117,7 +128,7 @@ Gui, Add, DropDownList, w450 vDinoChoice, %DinoIDs%
 
 Gui, Add, Text,, Level:
 Gui, Add, Edit
-Gui, Add, UpDown, vSpawnLevel Range1-200, 200
+Gui, Add, UpDown, vSpawnLevel Range1-999, 300
 
 
 Gui, Add, Button, Default, OK  ; The label GuiSummonButtonOK (if it exists) will be run when the button is pressed.
@@ -131,11 +142,11 @@ Gui, Add, DropDownList, w450 vEntityID, %EntityIDs%
 
 Gui, Add, Text,, Quantity:
 Gui, Add, Edit
-Gui, Add, UpDown, vQuantity Range1-200, 1
+Gui, Add, UpDown, vQuantity Range1-999, 1
 
 Gui, Add, Text,, Quality:
 Gui, Add, Edit
-Gui, Add, UpDown, vQuality, Range1-200, 2
+Gui, Add, UpDown, vQuality, Range1-999, 0
 
 Gui, Add, Checkbox, vForceBlueprint, Force as Blueprint?
 
@@ -200,9 +211,37 @@ Menu, Gamma, Add, 4, Gamma
 ; Create a submenu in the first menu (a right-arrow indicator). When the user selects it, the second menu is displayed.
 Menu, MyMenu, Add, Gamma, :Gamma
 
-return  ; End of script's auto-execute section.
+Menu, MyMenu, Add, Cross Hair,  ToggleCrossHair
 
+Gui +LastFound 
+hWnd := WinExist()
+DllCall( "RegisterShellHookWindow", UInt,Hwnd )
+MsgNum := DllCall( "RegisterWindowMessage", Str,"SHELLHOOK" )
+OnMessage( MsgNum, "ShellMessage" )
 
+Return  ; End of script's auto-execute section.
+
+ShellMessage( wParam,lParam )
+{
+	global bCrossHair
+
+	WinGetTitle, title, ahk_id %lParam%
+	If (bCrossHair && wParam = 32772) {
+		
+		if(Title="ARK: Survival Evolved") 
+			Gui, GuiCrossHair:Show, NoActivate
+		 else 
+			Gui, GuiCrossHair:Hide
+		
+		;ToolTip WinActivated`n%Title% %bCrossHair%
+		;sleep 1000
+		;ToolTip
+	}
+}
+
+SplashOff() {
+	SplashImage, Off
+}
 
 RunMacro()
 {
@@ -259,9 +298,9 @@ GuiSummonButtonOK:
 		Send,%ArkCmd%
 	
 	if %ForceTame%
-		send,{Tab}ForceTame{Enter}
+		send,{Tab}Cheat ForceTame{Enter}
 	else if %DoTame%
-		send,{Tab}DoTame{Enter}
+		send,{Tab}Cheat DoTame{Enter}
 	
 	Gui, Hide	
 return
@@ -288,7 +327,8 @@ GuiGiveItemButtonOK:
 return
 
 
-GuiCordinatesButtonOK:
+GuiCordinatesButtonOK() {
+	global arkCmd, bGPS, POIName, X, Y, Z
 	Gui, GuiCordinates:Default
 	Gui, Submit
 	if(bGPS){
@@ -301,7 +341,7 @@ GuiCordinatesButtonOK:
 	Log(ArkCmd)
 
 	Gui, Hide
-return
+}
 
 onPOIChanged:
 
@@ -320,8 +360,9 @@ onPOIChanged:
 
 return
 
-ToggleGPS:
-
+ToggleGPS()
+{
+	global bGPS, X, Y ,Z
 	GuiControlGet, bGPS, , bGPS,
 
 	if(bGPS){
@@ -338,7 +379,7 @@ ToggleGPS:
 	GuiControl,, Y, %Y%
 	GuiControl,, Z, %Z%
 
-return
+}
 
 
 ArkMacro(FileName)
@@ -356,6 +397,15 @@ Log(Msg)
 	FileAppend, %Msg%.`n, bahkase-log.txt
 }
 
+ToggleCrossHair() {
+	global bCrossHair, ScrW, ScrH
+	if (bCrossHair := !bCrossHair) {
+		Gui, GuiCrossHair:Show, x%ScrW% y%ScrH% NoActivate  ; NoActivate avoids deactivating the currently active window.
+	} else {
+		Gui, GuiCrossHair:Hide
+	}
+}
+
 ; **** HotKeys - Customize below for your preferences ****
 
 #IfWinActive ahk_exe ShooterGame.exe
@@ -368,6 +418,8 @@ MButton:: Send % "{w " . ( GetKeyState("w") ? "Up}" : "Down}" )
 XButton1:: Send % "{Click " . ( GetKeyState("LButton") ? "Up}" : "Down}" )
 ;no need, use right shift instead
 ;XButton2:: Send % "{shift " . ( GetKeyState("shift") ? "Up}" : "Down}" )
+
+return
 
 ;*** Dev/Debug ***
 ;f12::reload
