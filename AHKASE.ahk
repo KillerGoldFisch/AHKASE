@@ -179,7 +179,7 @@ Gui, Add, Button, Default, OK  ; The label ButtonOK (if it exists) will be run w
 ; *** Menu ***
 Menu, MyMenu, Add, Add Experience, AddExperience
 Menu, MyMenu, Add, Spawn/Summon,  ShowGuiSummon
-Menu, MyMenu, Add, Give Iten, ShowGuiGiveItem
+Menu, MyMenu, Add, Give Item, ShowGuiGiveItem
 Menu, MyMenu, Add, Run Macro, RunMacro
 Menu, MyMenu, Add, SetPlayerPos, ShowGuiCordinates
 
@@ -411,7 +411,7 @@ ToggleCrossHair() {
 #IfWinActive ahk_exe ShooterGame.exe
 F10::Menu, MyMenu, Show  ; i.e. press the Win-Z hotkey to show the menu.
 #IfWinActive ahk_exe ShooterGame.exe
-F11::ArkMacro("ahkase-AsendentPack.txt")
+F11::ArkMacro("F11.txt")
 
 ; Middle Mouse Button will hold down w key to move foward, Mouse Button 5 Holds down left button
 MButton:: Send % "{w " . ( GetKeyState("w") ? "Up}" : "Down}" )

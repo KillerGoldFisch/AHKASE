@@ -531,3 +531,8 @@ No ID,Wreath,Structure,100,"""Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/S
 435,Poison Grenade,Weapons,10,"""Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_PoisonGrenade.PrimalItem_PoisonGrenade'"""
 436,Fabricated Sniper Rifle,Weapons,1,"""Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMachinedSniper.PrimalItem_WeaponMachinedSniper'"""
 437,DodoRex Mask Skin,Skin,1,"""Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Skin/PrimalItemSkin_DodorexMask.PrimalItemSkin_DodorexMask'"""
+No ID,Admin Rifle,Weapons,1,"""Blueprint'/Game/Mods/AdminRifle/PrimalItem_AdminRifle.PrimalItem_AdminRifle'"""
+No ID,AJetpack,Armor,1,"""Blueprint'/Game/Mods/JetpackMod/PrimalItemArmor_jetpack.PrimalItemArmor_jetpack'"""
+No ID,AJetpackController,Armor,1,"""Blueprint'/Game/Mods/JetpackMod/PrimalItem_WeaponJetpackController.PrimalItem_WeaponJetpackController'"""
+No ID,Admin Elite Box,Resource,1,"""Blueprint'/Game/Mods/XtremeAdmin/Admin/EliteBox/PrimalItemStructure_EliteBox.PrimalItemStructure_EliteBox'"""
+No ID,Admin Resource Box,Resource,1,"""Blueprint'/Game/Mods/XtremeAdmin/Admin/ResourceBox/PrimalItemStructure_ResourceBox.PrimalItemStructure_ResourceBox'"""

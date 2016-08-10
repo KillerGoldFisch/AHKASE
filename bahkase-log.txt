@@ -1,0 +1,11 @@
+{Tab}Cheat GiveItem "Blueprint'/Game/Mods/AdminRifle/PrimalItem_AdminRifle.PrimalItem_AdminRifle'" 1 0 0 - Admin Rifle Admin Rifle{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/Mods/AdminRifle/PrimalItem_AdminRifle.PrimalItem_AdminRifle'" 1 0 0 - Admin Rifle Admin Rifle{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemArmor_ArgentavisSaddle.PrimalItemArmor_ArgentavisSaddle'" 1 0 0 - Argentavis Saddle Argentavis Saddle{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/Mods/AdminRifle/PrimalItem_AdminRifle.PrimalItem_AdminRifle'" 1 0 0 - Admin Rifle Admin Rifle{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/Mods/XtremeAdmin/Admin/EliteBox/PrimalItemStructure_EliteBox.PrimalItemStructure_EliteBox'" 1 0 0 - Admin Elite Box Admin Elite Box{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/Mods/JetpackMod/PrimalItemArmor_jetpack.PrimalItemArmor_jetpack'" 1 0 0 - AJetpack AJetpack{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/Mods/JetpackMod/PrimalItem_WeaponJetpackController.PrimalItem_WeaponJetpackController'" 1 0 0 - AJetpackController AJetpackController{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMachinedSniper.PrimalItem_WeaponMachinedSniper'" 1 100 0 - Fabricated Sniper Rifle Fabricated Sniper Rifle{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMachinedSniper.PrimalItem_WeaponMachinedSniper'" 1 100 0 - Fabricated Sniper Rifle Fabricated Sniper Rifle{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItemAmmo_AdvancedSniperBullet.PrimalItemAmmo_AdvancedSniperBullet'" 100 100 0 - Advanced Sniper Bullet Advanced Sniper Bullet{enter}.
+{Tab}Cheat GiveItem "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/PrimalItemStructure_SleepingBag_Hide.PrimalItemStructure_SleepingBag_Hide'" 5 100 0 - Hide Sleeping Bag Hide Sleeping Bag{enter}.
